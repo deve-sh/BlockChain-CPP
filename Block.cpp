@@ -13,4 +13,16 @@ class Block {
         this->transaction = transaction;
         this->prevHash = prevHash;
     }
+
+    std::string getPrevHash(){
+        return this->prevHash;
+    }
+
+    Transaction getTransaction(){
+        return this->transaction;
+    }
+
+    float getTimestamp(){
+        return this->timeStamp;
+    }
 };
