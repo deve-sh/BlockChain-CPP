@@ -19,15 +19,15 @@ class Transaction {
             return this->payee;
         }
 
-        Transaction(std::string payer, std::string payee, float amount){
-            this->amount = amount;
-            this->payer = payer;
-            this->payee = payee;
-        }
-
 		Transaction() {
 			this->amount = 0;
 			this->payer = "";
 			this->payee = "";
 		}
-}
+
+        Transaction(std::string payer, std::string payee, float amount){
+            this->amount = amount;
+            this->payer = payer;
+            this->payee = payee;
+        }
+};
