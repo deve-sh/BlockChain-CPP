@@ -24,4 +24,10 @@ class Transaction {
             this.payer = payer;
             this.payee = payee;
         }
+
+		Transaction() {
+			this.amount = 0;
+			this.payer = "";
+			this.payee = "";
+		}
 }
